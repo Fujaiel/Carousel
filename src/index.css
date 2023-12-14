@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: rgb(143, 140, 140);
+}
+
+/* Hide default arrows */
+/* .hide .slick-prev,
+.hide .slick-next {
+  display: none !important;
+} */
+
+/* Show custom arrows */
+/* .hide .slick-custom-arrow {
+    display: block !important;
+  } */
+
+  /* Ensure custom arrows are not affected by general styles */
+/* .hide .custom-next-arrow,
+.hide .custom-prev-arrow {
+  display: block !important;
+} */
+
+@keyframes moveUp {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-move-up {
+    animation: moveUp 0.3s ease-in-out;
+  }
